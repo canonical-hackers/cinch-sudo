@@ -4,8 +4,7 @@ module Cinch::Plugins
   class Sudo
     include Cinch::Plugin
 
-    # this is the event that gets called when you join a channel
-    listen_to 353
+    listen_to :channel
 
     def initialize(*args)
       super
@@ -16,18 +15,17 @@ module Cinch::Plugins
       @sudoconfig = YAML::load(File.open('config/sudo.yml'))
     end
 
-    def listen(arg)
-      # FIX: don't hard-code the channel name here
-      channel = @sudoconfig['channel']
+    def listen(m)
       logfile = @sudoconfig['logfile']
-      target = Cinch::Target.new(channel, bot)
 
       File::Tail::Logfile.tail(logfile) do |line|
         if looks_like_sudo? line
-          target.msg format_results(process_line(line.chomp))
+          m.reply format_results(process_line(line.chomp))
         end
       end
     end
+
+    private
 
     def format_results(results)
       if results.success == true
@@ -38,11 +36,7 @@ module Cinch::Plugins
     end
 
     def looks_like_sudo?(line)
-      if line.match(@sudo_re)
-        true
-      else
-        false
-      end
+      line.match(@sudo_re)
     end
 
     def process_line(line)
