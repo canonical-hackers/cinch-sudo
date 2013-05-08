@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cinch-sudo/version'
+require 'cinch/plugins/sudo/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "cinch-sudo"
   gem.version       = Cinch::Sudo::VERSION
-  gem.authors       = ["Brian Haberer"]
+  gem.authors       = ["Paul Visscher", "Brian Haberer"]
   gem.email         = ["bhaberer@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Cinch Plugin to report usage of Sudo to the channel}
+  gem.summary       = %q{Cinch Plugin for monitoring Sudo}
+  gem.homepage      = "https://github.com/canonical-hackers/cinch-sudo"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

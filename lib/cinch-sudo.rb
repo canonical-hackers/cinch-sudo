@@ -1,7 +1,2 @@
-require "cinch-sudo/version"
-
-module Cinch
-  module Sudo
-    # Your code goes here...
-  end
-end
+require 'cinch/plugins/sudo/version'
+require 'cinch/plugins/sudo/sudo'
