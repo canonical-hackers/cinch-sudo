@@ -5,7 +5,7 @@ require 'cinch/plugins/sudo/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'cinch-sudo'
-  gem.version       = Cinch::Sudo::VERSION
+  gem.version       = "0.0.1"
   gem.authors       = ['Paul Visscher', 'Brian Haberer']
   gem.email         = ['bhaberer@gmail.com']
   gem.description   = %q{Cinch Plugin to report usage of Sudo to the channel}
