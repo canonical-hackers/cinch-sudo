@@ -2,6 +2,7 @@ module Cinch
   module Plugins
     class Sudo
       class Entry
+        # Might need to clean these up, make them nested?
         SUDO_REGEX = /^\w{3}\s+\d+\s+\d{2}:\d{2}:\d{2}\s+[\w\.]+\s+sudo[\[\]\d]*:\s+(\w+)\s+:/
         DATE_REGEX = /^(\w{3}\s+\d+\s+\d{2}:\d{2}:\d{2})\s+/
         USER_REGEX = /sudo[\[\]\d]*:\s+(\w+)\s+:\s/

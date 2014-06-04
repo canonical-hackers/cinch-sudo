@@ -6,8 +6,7 @@ module Cinch
     class Sudo
       include Cinch::Plugin
 
-      # timer 5, method: :sudo_check
-      listen_to :channel
+      listen_to :connect
 
       def initialize(*args)
         super
@@ -19,7 +18,7 @@ module Cinch
         if File.exist?(@logfile)
           start_tail
         else
-          debug 'File not found!'
+          debug "File (#{@filename}) not found!"
         end
       end
 
