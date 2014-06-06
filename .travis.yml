@@ -18,6 +18,7 @@ matrix:
   allow_failures:
     - rvm: 1.8.7
     - rvm: ree
+    - rbx
     - rvm: jruby-18mode
     - rvm: jruby-19mode
     - rvm: jruby-head
