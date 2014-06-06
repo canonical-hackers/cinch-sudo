@@ -1,6 +1,11 @@
 # Cinch::Sudo
 
-TODO: Write a gem description
+[![Gem Version](https://badge.fury.io/rb/cinch-sudo.png)](http://badge.fury.io/rb/cinch-sudo)
+[![Dependency Status](https://gemnasium.com/canonical-hackers/cinch-sudo.png)](https://gemnasium.com/canonical-hackers/cinch-sudo)
+[![Build Status](https://travis-ci.org/canonical-hackers/cinch-sudo.png?branch=master)](https://travis-ci.org/canonical-hackers/cinch-sudo)
+[![Coverage Status](https://coveralls.io/repos/canonical-hackers/cinch-sudo/badge.png?branch=master)](https://coveralls.io/r/canonical-hackers/cinch-sudo?branch=master)
+[![Code Climate](https://codeclimate.com/github/canonical-hackers/cinch-sudo.png)](https://codeclimate.com/github/canonical-hackers/cinch-sudo)
+
 
 ## Installation
 
