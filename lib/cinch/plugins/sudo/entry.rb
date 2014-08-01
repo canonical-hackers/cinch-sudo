@@ -1,10 +1,12 @@
 module Cinch
   module Plugins
     class Sudo
+      # Class for managing a line of sudo
       class Entry
         # Might need to clean these up, make them nested?
-        SUDO_REGEX = /^\w{3}\s+\d+\s+\d{2}:\d{2}:\d{2}\s+[\w\.]+\s+sudo[\[\]\d]*:\s+(\w+)\s+:/
-        DATE_REGEX = /^(\w{3}\s+\d+\s+\d{2}:\d{2}:\d{2})\s+/
+        DATE = /\w{3}\s+\d+\s+\d{2}:\d{2}:\d{2}/
+        SUDO_REGEX = /^#{DATE}\s+[\w\.]+\s+sudo[\[\]\d]*:\s+(\w+)\s+:/
+        DATE_REGEX = /^(#{DATE})\s+/
         USER_REGEX = /sudo[\[\]\d]*:\s+(\w+)\s+:\s/
         AUTH_REGEX = /sudo[\[\]\d]*:\s+\w+\s+:\sTTY=/
 

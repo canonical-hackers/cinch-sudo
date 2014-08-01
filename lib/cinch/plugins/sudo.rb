@@ -3,6 +3,7 @@ require 'file-tail'
 
 module Cinch
   module Plugins
+    # Cinch plugin to report usage of Sudo on a machine
     class Sudo
       include Cinch::Plugin
 
@@ -14,7 +15,7 @@ module Cinch
         @channel = config[:channel]
       end
 
-      def listen(m)
+      def listen(_m)
         if File.exist?(@logfile)
           start_tail
         else
