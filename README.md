@@ -1,4 +1,4 @@
-# Cinch::Sudo
+# Cinch::Plugins::Sudo
 
 [![Gem Version](https://badge.fury.io/rb/cinch-sudo.png)](http://badge.fury.io/rb/cinch-sudo)
 [![Dependency Status](https://gemnasium.com/canonical-hackers/cinch-sudo.png)](https://gemnasium.com/canonical-hackers/cinch-sudo)
