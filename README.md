@@ -3,9 +3,9 @@
 [![Gem Version](https://badge.fury.io/rb/cinch-sudo.png)](http://badge.fury.io/rb/cinch-sudo)
 [![Dependency Status](https://gemnasium.com/canonical-hackers/cinch-sudo.png)](https://gemnasium.com/canonical-hackers/cinch-sudo)
 [![Build Status](https://travis-ci.org/canonical-hackers/cinch-sudo.png?branch=master)](https://travis-ci.org/canonical-hackers/cinch-sudo)
-[![Coverage Status](https://coveralls.io/repos/canonical-hackers/cinch-sudo/badge.png?branch=master)](https://coveralls.io/r/canonical-hackers/cinch-sudo?branch=master)
-[![Code Climate](https://codeclimate.com/github/canonical-hackers/cinch-sudo.png)](https://codeclimate.com/github/canonical-hackers/cinch-sudo)
-
+[![Code Climate](https://codeclimate.com/repos/56af1f0b89ff0c6781005e9e/badges/118e0b84382c00a58d65/gpa.svg)](https://codeclimate.com/repos/56af1f0b89ff0c6781005e9e/feed)
+[![Test Coverage](https://codeclimate.com/repos/56af1f0b89ff0c6781005e9e/badges/118e0b84382c00a58d65/coverage.svg)](https://codeclimate.com/repos/56af1f0b89ff0c6781005e9e/coverage)
+[![Issue Count](https://codeclimate.com/repos/56af1f0b89ff0c6781005e9e/badges/118e0b84382c00a58d65/issue_count.svg)](https://codeclimate.com/repos/56af1f0b89ff0c6781005e9e/feed)
 
 ## Installation
 
